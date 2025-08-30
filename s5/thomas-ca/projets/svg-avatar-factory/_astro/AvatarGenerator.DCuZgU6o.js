@@ -1,0 +1,9 @@
+import{r as c}from"./index.RH_Wq4ov.js";var d={exports:{}},o={};/**
+ * @license React
+ * react-jsx-runtime.production.js
+ *
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */var x;function v(){if(x)return o;x=1;var n=Symbol.for("react.transitional.element"),i=Symbol.for("react.fragment");function s(u,e,r){var l=null;if(r!==void 0&&(l=""+r),e.key!==void 0&&(l=""+e.key),"key"in e){r={};for(var a in e)a!=="key"&&(r[a]=e[a])}else r=e;return e=r.ref,{$$typeof:n,type:u,key:l,ref:e!==void 0?e:null,props:r}}return o.Fragment=i,o.jsx=s,o.jsxs=s,o}var p;function f(){return p||(p=1,d.exports=v()),d.exports}var t=f();function j(){const[n,i]=c.useState(null),[s,u]=c.useState(!1);async function e(){u(!0),i(null);const a=await(await fetch("http://127.0.0.1:54321/functions/v1/generate-avatar",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({})})).json();i(a.svg),u(!1)}function r(){n&&navigator.clipboard.writeText(n)}return t.jsxs("div",{className:"border border-green-500 p-4 rounded-xl",children:[t.jsx("h2",{className:"text-xl mb-2",children:"🎨 Générateur d’avatars"}),t.jsxs("div",{className:"bg-black border border-green-700 h-40 flex items-center justify-center overflow-auto p-2",children:[s&&t.jsx("p",{children:"⏳ Génération..."}),!s&&n&&t.jsx("div",{dangerouslySetInnerHTML:{__html:n}}),!s&&!n&&t.jsx("p",{children:"Aucun avatar généré"})]}),t.jsxs("div",{className:"mt-4 flex gap-2",children:[t.jsx("button",{onClick:e,className:"bg-green-700 px-4 py-2 rounded",children:"Générer un avatar"}),n&&t.jsx("button",{onClick:r,className:"bg-green-900 px-4 py-2 rounded",children:"Copier le SVG"})]})]})}export{j as default};
