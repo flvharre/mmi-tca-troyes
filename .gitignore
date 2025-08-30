@@ -1,4 +1,5 @@
-/dist/
-/node_modules/
-/.astro
-/.env
+dist/
+node_modules/
+.astro
+.env
+/ressources/
